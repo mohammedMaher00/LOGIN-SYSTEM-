@@ -1,0 +1,59 @@
+
+
+.fit-content{
+    width: fit-content;
+}
+
+.bg-main{
+    background-color: #24353f;
+}
+.h1-c {
+    color: #17a2b8;
+}
+input{
+    background-color: transparent !important;
+    color: white !important;
+  
+}
+input::placeholder{
+    color: rgb(182 182 182) !important;
+}
+input:focus{
+    box-shadow: none !important;
+}
+.form-content{
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: var(--bs-navbar-nav-link-padding-x);
+      padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+    .navbar-expand-lg .navbar-nav-scroll {
+      overflow: visible;
+    }
+    .navbar-expand-lg .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+    }
+    .navbar-expand-lg .navbar-toggler {
+      display: none;
+    }
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+  </head>
+  <body class="bg-main">
+    <div class="container w-50 my-5">
+      <div class="form-content p-5">
+        <h1 class="h1-c text-center my-3">Smart Login System</h1>
+        <input
+        oninput="validateusername()"
+          type="text"
+          id="signUpName"
+          class="form-control my-3"
+          placeholder="Enter your name"
+        />
+        <p class="text-danger d-none nameCheck">
+          Username must contain at least 3 characters !
+        </p>
+        <input
+        oninput="validateEmail(),validateDublicateEmail()"
+          type="email"
+          id="signUpEmail"
+          class="form-control my-3"
+          placeholder="Enter your E-mail"
+        />
+        <p class="text-danger d-none emailCheck">Please Enter a valid E-mail</p>
+        <p class="text-danger d-none emailCheckDublicate">
+          Enter another email (Dublicated Email)
+        </p>
+        <input
+        oninput="validatepass()"
+          type="password"
+          id="signUpPass"
+          class="form-control my-3"
+          placeholder="Enter your password"
+        />
+        <p class="text-danger d-none passCheck emailCheckDublicate">
+          --password must contain : <br />
+          - at least one upper case letter <br />- at least one lower case
+          letter <br />- at least one number <br />
+          - at least one special character <br />- at least 8 characters
+        </p>
+        <button
+          onclick="adduser()"
+          id="btnSignup"
+          class="w-100 btn btn-outline-info"
+        >
+          Sign Up
+        </button>
+        <div class="newEmail d-flex text-white fit-content mx-auto my-3">
+          <p>You have an account?</p>
+          <a href="./index.html" class="text-white ms-2">Sign in</a>
+        </div>
+      </div>
+    </div>
+<script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+   
+  </body>
+</html>
